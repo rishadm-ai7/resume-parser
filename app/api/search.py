@@ -15,7 +15,7 @@ def fuzzy_search(q: str = Query(default=None)):
             "query": {
                 "multi_match": {
                     "query": q,
-                    "fields": ["skills", "tools", "certifications"],
+                    "fields": ["tools/technologies", "skillset", "certifications"],
                     "fuzziness": "AUTO",
                 }
             }
